@@ -1,6 +1,4 @@
 language: java
 jdk:
   - oraclejdk21
-
-script:
-  - ./mvnw clean install
+dist: trusty
