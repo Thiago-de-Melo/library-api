@@ -1,6 +1,5 @@
 language: java
-jdk:
-  - oraclejdk21
+jdk: oraclejdk21
 dist: trusty
-before_install:
-  - chmod +x mvnw
+install:
+  - ./mvnw install
