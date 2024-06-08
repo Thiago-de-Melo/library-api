@@ -1,5 +1,13 @@
 language: java
 jdk: openjdk21
-dist: trusty
+dist: bionic
+
 before_install:
   - chmod +x mvnw
+  - export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))
+  - export PATH=$JAVA_HOME/bin:$PATH
+  - java -version
+  - javac -version
+
+script:
+  - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
