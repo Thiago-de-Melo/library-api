@@ -1,6 +1,12 @@
 language: java
-sudo: true
-dist: trusty
-jdk: oraclejdk21
+
 before_install:
-  - chmod +x mvnw
+  - wget https://download.java.net/java/GA/jdk21/latest/binaries/openjdk-21_linux-x64_bin.tar.gz
+  - tar -xzf openjdk-21_linux-x64_bin.tar.gz
+  - export JAVA_HOME=$PWD/jdk-21
+  - export PATH=$JAVA_HOME/bin:$PATH
+  - java -version
+  - javac -version
+
+script:
+  - mvn clean install
