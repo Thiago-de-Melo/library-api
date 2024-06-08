@@ -1,6 +1,15 @@
+arch: amd64
+
 language: java
+
 jdk:
-  - oraclejdk21
-dist: trusty
-before_install:
-  - chmod +x mvnw
+  - oraclejdk15
+
+cache:
+  directories:
+    - $HOME/.m2
+
+script:
+  - java --version
+  - ./mvnw clean install
+  - ./mvnw test
