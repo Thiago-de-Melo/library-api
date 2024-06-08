@@ -926,3 +926,39 @@ java.lang.IllegalStateException: couldn't determine local port. Please set sprin
 2024-06-07T20:42:11.994-03:00  WARN 18376 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
 2024-06-07T20:42:11.995-03:00  INFO 18376 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-06-07T20:42:11.998-03:00  INFO 18376 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-07T21:11:11.333-03:00  INFO 10744 --- [main] c.t.l.api.resource.BookControllerTest    : Starting BookControllerTest using Java 21 with PID 10744 (started by Thiago in D:\library-api)
+2024-06-07T21:11:11.335-03:00  INFO 10744 --- [main] c.t.l.api.resource.BookControllerTest    : The following 1 profile is active: "test"
+2024-06-07T21:11:14.234-03:00  INFO 10744 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-07T21:11:14.235-03:00  INFO 10744 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-07T21:11:14.237-03:00  INFO 10744 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-07T21:11:14.271-03:00  INFO 10744 --- [main] c.t.l.api.resource.BookControllerTest    : Started BookControllerTest in 3.36 seconds (process running for 4.624)
+2024-06-07T21:11:14.490-03:00  WARN 10744 --- [main] PageModule$PlainPageSerializationWarning : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-06-07T21:11:14.582-03:00  INFO 10744 --- [main] c.t.l.api.resource.BookController        :  updating book of id: 1 
+2024-06-07T21:11:14.599-03:00  INFO 10744 --- [main] c.t.l.api.resource.BookController        :  updating book of id: 1 
+2024-06-07T21:11:14.719-03:00  INFO 10744 --- [main] c.t.l.api.resource.BookController        :  creating a book for isbn: 001 
+2024-06-07T21:11:14.730-03:00  INFO 10744 --- [main] c.t.l.api.resource.BookController        :  obtaining details for book id: 1 
+2024-06-07T21:11:14.743-03:00  INFO 10744 --- [main] c.t.l.api.resource.BookController        :  creating a book for isbn: 001 
+2024-06-07T21:11:14.753-03:00  INFO 10744 --- [main] c.t.l.api.resource.BookController        :  deleting book of id: 1 
+2024-06-07T21:11:14.763-03:00  INFO 10744 --- [main] c.t.l.api.resource.BookController        :  deleting book of id: 1 
+2024-06-07T21:11:14.770-03:00  INFO 10744 --- [main] c.t.l.api.resource.BookController        :  obtaining details for book id: 1 
+2024-06-07T21:17:41.627-03:00  INFO 15720 --- [main] c.t.l.api.resource.BookControllerTest    : Starting BookControllerTest using Java 21 with PID 15720 (started by Thiago in D:\library-api)
+2024-06-07T21:17:41.628-03:00  INFO 15720 --- [main] c.t.l.api.resource.BookControllerTest    : The following 1 profile is active: "test"
+2024-06-07T21:17:44.379-03:00  INFO 15720 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-07T21:17:44.380-03:00  INFO 15720 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-07T21:17:44.382-03:00  INFO 15720 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-07T21:17:44.422-03:00  INFO 15720 --- [main] c.t.l.api.resource.BookControllerTest    : Started BookControllerTest in 3.169 seconds (process running for 4.285)
+2024-06-07T21:17:44.622-03:00  WARN 15720 --- [main] PageModule$PlainPageSerializationWarning : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-06-07T21:17:44.792-03:00  INFO 15720 --- [main] c.t.l.api.resource.BookController        :  updating book of id: 1 
+2024-06-07T21:17:44.810-03:00  INFO 15720 --- [main] c.t.l.api.resource.BookController        :  updating book of id: 1 
+2024-06-07T21:17:44.827-03:00  INFO 15720 --- [main] c.t.l.api.resource.BookController        :  creating a book for isbn: 001 
+2024-06-07T21:17:44.837-03:00  INFO 15720 --- [main] c.t.l.api.resource.BookController        :  obtaining details for book id: 1 
+2024-06-07T21:17:44.857-03:00  INFO 15720 --- [main] c.t.l.api.resource.BookController        :  creating a book for isbn: 001 
+2024-06-07T21:17:44.875-03:00  INFO 15720 --- [main] c.t.l.api.resource.BookController        :  deleting book of id: 1 
+2024-06-07T21:17:44.885-03:00  INFO 15720 --- [main] c.t.l.api.resource.BookController        :  deleting book of id: 1 
+2024-06-07T21:17:44.895-03:00  INFO 15720 --- [main] c.t.l.api.resource.BookController        :  obtaining details for book id: 1 
