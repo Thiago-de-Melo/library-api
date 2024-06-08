@@ -1,12 +1,5 @@
 language: java
-
+jdk: openjdk21
+dist: trusty
 before_install:
-  - wget https://download.java.net/java/GA/jdk21/latest/binaries/openjdk-21_linux-x64_bin.tar.gz
-  - tar -xzf openjdk-21_linux-x64_bin.tar.gz
-  - export JAVA_HOME=$PWD/jdk-21
-  - export PATH=$JAVA_HOME/bin:$PATH
-  - java -version
-  - javac -version
-
-script:
-  - mvn clean install
+  - chmod +x mvnw
